@@ -82,3 +82,6 @@ button:hover {
     flex-direction: column;
   }
 }
+.note small {
+  margin-right: 10px;
+}
