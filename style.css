@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+#note-form {
+  display: flex;
+  gap: 10px;
+}
+
+#note-input {
+  flex: 1;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+  cursor: pointer;
+}
+
+#error-message {
+  color: red;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-left: 6px solid #999;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.category-personal {
+  border-left-color: teal;
+}
+
+.category-work {
+  border-left-color: darkred;
+}
+
+.category-study {
+  border-left-color: blue;
+}
+
+@media (max-width: 600px) {
+  #note-form {
+    flex-direction: column;
+  }
+}
